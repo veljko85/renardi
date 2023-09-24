@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/gif/png/svg" href="sandviper-icon-gray.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Renardi 3D Configurator</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    
+    
+    
+    
+    
+    
+
+    <!-- lootie -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.4/lottie_svg.min.js"></script>
+  
+  <script type="module" crossorigin src="assets/index-050b4fee.js"></script>
+  <link rel="stylesheet" href="assets/index-be055075.css">
+</head>
+  <body>
+    <div id="mainCover">
+      <div class="wave">
+        <button class="wave__btn" type="button" id="startExpiriance"></button>
+        <div class="wave__container">
+          <div class="wave__circle"></div>
+          <div class="wave__circle"></div>
+          <div class="wave__circle"></div>
+        </div>
+      </div>
+    </div>
+    <!-- MAIN CONTAINER -->
+    <div id="mainContainer">
+      <div id="customLoadingScreenDiv">
+        <div id="lottieWraper"></div>
+        <div id="loadingPercentages">0%</div>
+      </div>
+      <div class="cart-basket-section dev-border">
+        <i class="fa fa-shopping-bag"></i>
+      </div>
+      <!-- HEADER -->
+      <div class="header dev-border"></div>
+      <!-- CANVAS -->
+      <canvas id="renderCanvas"></canvas>
+      <!-- LEFT CONFIGURATOR -->
+      <div class="configurator-left dev-border">
+          <div class="name dev-border" id="shoeNameDiv">
+          </div>
+          <div class="description-container dev-border">
+            <div class="brand dev-border" id="brandDiv"></div>
+            <div class="description-one dev-border" id="descriptionOne"></div>
+            <div class="description-two dev-border" id="descriptionTwo"></div>
+          </div>
+          <div class="images dev-border">
+            <div class="galerija-slike"></div>
+            <div class="img-info"></div>
+          </div>
+      </div>
+      <!-- RIGHT CONFIGURATOR -->
+      <div class="configurator-right dev-border">
+        <div class="devider-section dev-border"></div>
+        <div id="sizeMainContainer" class="size-main-container dev-border">
+          <div class="size-title">SIZE</div>
+          <div id="sizeContainer" class="size-container"></div>
+        </div>
+        <div id="reviewsContainer" class="reviews-container dev-border">
+          <div class="rev-title">REVIEWS</div>
+          <div class="rev-stars" id="revStars">
+            <i class="fa fa-star-o stars"></i>
+            <i class="fa fa-star-o stars"></i>
+            <i class="fa fa-star-o stars"></i>
+            <i class="fa fa-star-o stars"></i>
+            <i class="fa fa-star-o stars"></i>
+          </div>
+        </div>
+        <div id="priceContainer" class="price-container dev-border">
+          <div class="priceTitle">PRICE</div>
+          <div id="price"></div>
+        </div>
+        <div id="colorContainer" class="color-container dev-border">
+          <div class="skins-title">SKIN COLOR</div>
+          <div id="skinsOptions"></div>
+          <div class="color-title">COLOR</div>
+          <div id="colorOptions"></div>
+        </div>
+      </div>
+      <!-- FOOTER -->
+      <div class="footer dev-border">
+        <div class="play-video dev-border" id="playVideo">
+          <div class="play-button"><i class="fa fa-play-circle-o"></i></div>
+          <div class="play-video-text">Play Video</div>
+        </div>
+        <div class="arrows-section dev-border">
+          <div id="leftArrow"><i class="fa fa-arrow-left"></i></div>
+          <div id="rightArrow"><i class="fa fa-arrow-right"></i></div>
+        </div>
+        <div class="shooes-selection-divs-container dev-border">
+          <div id="numFirst">01</div>
+          <div id="mainSelectionDiv"></div>
+          <div class="selection-div"></div>
+          <div class="selection-div"></div>
+          <div class="selection-div"></div>
+          <div id="numLast">03</div>
+        </div>
+        <div class="add-to-cart-section dev-border">
+          <div id="addToCartBtn">ADD TO CART</div>
+          <div id="addToWishListBtn"><i id="wishHeart" class="fa fa-heart-o"></i></div>
+        </div>
+      </div>   
+      
+      <!-- VIDEO -->
+      <div class="video-section display-none">
+      <!-- <div class="video-section display-flex"> -->
+        <div class="video-container">
+          <div id="closeVideo"><i class="fa fa-times"></i></div>
+          <video id='video' controls loop="true" type="video/mp4"></video>
+        </div>
+      </div>
+
+    <!-- container end -->
+    </div>
+
+    <!-- main js file -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="scripts/lightbox.js"></script>
+  </body>
+</html>
